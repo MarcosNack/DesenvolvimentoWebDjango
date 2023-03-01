@@ -13,4 +13,4 @@
 13) Criar uma pasta imagens e incluir todas as imagens nesta pasta
 14) Chamar as imagens dentro do HTML através de tags de bloco do Python {% %}
 15) Criar pasta para o uso do CSS, Python e JavaScript
-16) 
+
