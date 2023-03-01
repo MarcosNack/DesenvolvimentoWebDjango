@@ -1,1 +1,103 @@
+Questão 1 – Um fator que distingue a HTML das outras linguagens é que ela não possui estruturas de controle e de repetição. Além disso, também não é possível criar procedimentos e funções ou chamar rotinas internas do sistema operacional. A fim de obter esse tipo de recurso, é necessário recorrer a algumas extensões que foram acrescentadas, como a linguagem JavaScript.
 
+ALVES, P. W. Desenvolvimento e Design de Sites. 1ª ed. São Paulo: Érica, 2014. 
+
+Considerando o excerto apresentado, analise as afirmativas a seguir quanto a linguagem HTML:
+
+I. Possui característica de Independência de plataforma (hardware e software), o que torna possível a qualquer tipo de computador ler e interpretar o conteúdo de uma página escrita em HTML.
+
+II. Possui característica de monopolização por uma pessoa ou por uma empresa, privada ou do governo.
+
+III. Os arquivos HTML são pequenos, vinculados entre si pelos hiperlinks definidos na estrutura dos documentos. O tamanho reduzido viabiliza a transmissão com velocidade aceitável.
+
+IV. A linguagem foi desenvolvida para ser utilizada além na web para equipamento/sistema operacional específico.
+
+a) II e IV, apenas.
+
+b) I e II, apenas.
+
+c) I, III apenas.
+
+d) I, III e IV apenas.
+
+e) I e IV, apenas.
+--------------------------------------------------
+Questão 1 – Alternativa C.
+
+I. a linguagem html possui características específicas como: portabilidade, ou seja, independência de plataforma (é executada em qualquer computador com um navegador de internet);
+
+III. é uma linguagem leve, ou seja, sua codificação resulta em arquivos pequenos vinculados entre si, no formato de texto promovendo uma maior velocidade de transmissão e compilação pelo navegador.
+--------------------------------------------------
+
+Questão 2 – O código abaixo é o exemplo de uma sintaxe básica de um código CSS que possa ser utilizado dentro do Framework Django:
+
+h1 {
+
+font-family: times new roman;
+
+font-size: 30px;
+
+background-color #0000FF;
+
+}
+
+#formato_paragrafo {
+
+font-family: arial;
+
+font-size: 10px;
+
+background-color #7FFF00;
+
+}
+
+Neste sentido o exemplo apresentado ilustra o trecho de código CSS externo, que possui uma seção única constituída de seletores, e estes de um corpo de declaração que, deve conter propriedades específicas ao elemento HTML. Diante disso, dentro do HTML os marcadores necessários para aplicar o estilo externo:
+
+a) É necessário se utilizar de marcadores de elementos HTML acrescidos do atributo style e o nome da classe quando necessário
+
+b) É necessário utilizar apenas de marcadores HTML, quaisquer que eles sejam, desde que no código CSS for selecionados adequadamente
+
+c) É necessário utilizar o atributo style para cada elemento HTML e dentro das TAGs <head> e </head> na seção de cabeçalho definir as localizações das classes
+
+d) Somente é preciso definir a localização das classes nas TAGs <script> e </script> que o navegador subentende que as regras serão aplicadas para cada elemento HTML
+
+e) Deve-se avisar ao navegador dentro das TAGS <body> e </body> a localização do arquivo externo CSS, e para cada elemento HTML atribuir uma classe com o identificador ID.
+--------------------------------------------------
+Questão 2 – Alternativa B.
+
+quando o código CSS é externo é necessário definir regras no arquivo CSS a partir de seletores para cada elemento HTML e definir as classes específicas como mostra o código exemplo do enunciado, com o símbolo sustenido ou jogo da velha (#). Além de realizar a seleção dos elementos que serão estilizados, é necessário definir a localização do arquivo dentro da seção cabeçalho no código HTML. 
+--------------------------------------------------
+
+Questão 3 – A linguagem JavaScript deve ser definida como uma linguagem que é interpretada e tem seu funcionamento dependente de funcionalidades hospedadas no navegador. Isso significa que a linguagem JavaScript é uma linguagem:
+
+a) Compilável pelo navegador de internet.
+
+b) Usada para rodar do lado do cliente.
+
+c) Usada para rodar do lado do servidor.
+
+d) Script que trabalha obrigatoriamente com tags.
+
+e) Se utiliza de tags seletoras equivalente ao CSS.
+--------------------------------------------------
+Questão 3 – Alternativa B.
+
+A linguagem JavaScript não é compilável, e sim interpretada pelo navegador de internet. Não precisa de uma aplicação específica para executar um arquivo de código executável; por isso, a linguagem JavaScript é denominada linguagem script. A linguagem JavaScript é uma linguagem trabalhada do lado cliente, na camada front-end, ou seja, ela é interpretada e funciona a partir de funcionalidades hospedadas no navegador. Assim, na maior parte das vezes, o JavaScript não se utiliza de funcionalidades de serviços de um servidor.  Contudo, mesmo sendo um linguagem script, é uma linguagem de programação orientada ao objeto e que trabalha com comandos e instruções parecidas com o Java, mas não define scripts HTML nem para o CSS.
+--------------------------------------------------
+
+Questão 4 – O Framework Django é uma forma de unir e organizar diversas linguagens de programação e recursos utilizados para o desenvolvimento de um sistema Web. O paradigma do código HTML é estático por natureza, através do Framework Django, o qual permite transformar um código próximo ao Python em HTML para a construção de sites dinâmicos de forma prática e rápida.  Este procedimento é realizado através de:
+
+a) Roteamentos URL no arquivo url.py
+
+b) Templates no arquivo de extensão .html
+
+c) Visões no arquivo view.py
+
+d) Configurações no arquivo admin.py
+
+e) Parametrizações no arquivo manage.py
+--------------------------------------------------
+Questão 4 – Alternativa B.
+
+os templates são arquivos de codificação html, onde o Django permite transformar o html em código próximo do Python através da inclusão das tags de bloco {%  %}.
+--------------------------------------------------
