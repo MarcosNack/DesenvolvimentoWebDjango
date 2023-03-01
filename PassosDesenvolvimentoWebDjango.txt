@@ -1,0 +1,16 @@
+1) Instalação do Python - OK
+2) Criação do ambiente virtual
+3) Instalação do Pacote Django (PIP)
+4) Criação do Projeto
+5) Parametrizações Settings.py
+6) Migração dos Modelos de dados
+7) Credenciais de um SuperUsuário
+8) Criação de uma apliação Web
+9) Realizar os roteamentos das páginas (URL.py)
+10) Criar função início (view.py)
+11) Criar template e arquivo HTML
+12) Criar pasta Static e configurar localização da pasta em setting.py
+13) Criar uma pasta imagens e incluir todas as imagens nesta pasta
+14) Chamar as imagens dentro do HTML através de tags de bloco do Python {% %}
+15) Criar pasta para o uso do CSS, Python e JavaScript
+16) 
