@@ -38,6 +38,8 @@
     --> py manage.py createsuperuser
 
 8) Criação de uma apliação Web
+  I) Comando
+    --> py manage.py startapp produtos
 
 9) Realizar os roteamentos das páginas (URL.py)
 
