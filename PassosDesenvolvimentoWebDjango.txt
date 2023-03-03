@@ -1,16 +1,21 @@
 1) Instalação do Python - OK
 
 2) Criar e Ativar ambiente virtual
-  a) venvwebdjango
+  a) Criar ambiente virtual
+    --> python -m venv venvwebdjango
+  b) Ativar ambiente virtual
+    --> venvwebdjango\Scripts\activate.bat
+  c) Desativar ambiente virtual
+    --> venvwebdjango\Scripts\deactivate.bat
   
 3) Instalação do Pacote Django (PIP)
   a) pip install Django
   
 4) Criação do Projeto
   a) Comando para criar o projeto Django django-admin startproject <nome do projeto>
-    --> django-admin startproject projeto_aula_desenv_web
+    --> django-admin startproject desenvolvimentowebdjango
   
-  b) Executar o projeto
+  b) Executar o projeto entrar na pasta do projeto
     --> py manage.py runserver  
   
 5) Parametrizações Settings.py
