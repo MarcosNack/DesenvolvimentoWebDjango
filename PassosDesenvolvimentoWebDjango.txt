@@ -1,28 +1,41 @@
 1) Instalação do Python - OK
 
 2) Criar e Ativar ambiente virtual
-  a) Criar ambiente virtual
+  I) Criar ambiente virtual
     --> python -m venv venvwebdjango
-  b) Ativar ambiente virtual
+  II) Ativar ambiente virtual
     --> venvwebdjango\Scripts\activate.bat
-  c) Desativar ambiente virtual
+  III) Desativar ambiente virtual
     --> venvwebdjango\Scripts\deactivate.bat
   
 3) Instalação do Pacote Django (PIP)
-  a) pip install Django
+  I) pip install Django
   
 4) Criação do Projeto
-  a) Comando para criar o projeto Django django-admin startproject <nome do projeto>
+  I) Comando para criar o projeto Django django-admin startproject <nome do projeto>
     --> django-admin startproject desenvolvimentowebdjango
   
-  b) Executar o projeto entrar na pasta do projeto
+  II) Executar o projeto entrar na pasta do projeto
     --> py manage.py runserver  
   
 5) Parametrizações Settings.py
+  I) Alterar o idioma LANGUAGE_CODE
+    --> "pt-br"
+    
+  II) Alterar o TIME_ZONE
+    --> "America/Sao_Paulo"
+    
+  II) Alterar a variavel DATABASES o nome do banco de dados db.sqlite3
+    --> nome_projeto.sqlite3
+    
 
 6) Migração dos Modelos de dados
+  I) Comando
+    --> py manage.py migrate
 
 7) Credenciais de um SuperUsuário
+  I) Comando
+    --> py manage.py createsuperuser
 
 8) Criação de uma apliação Web
 
