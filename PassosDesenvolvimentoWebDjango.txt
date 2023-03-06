@@ -25,34 +25,93 @@
   II) Alterar o TIME_ZONE
     --> "America/Sao_Paulo"
     
-  II) Alterar a variavel DATABASES o nome do banco de dados db.sqlite3
+  III) Alterar a variavel DATABASES o nome do banco de dados db.sqlite3
     --> nome_projeto.sqlite3
     
-
 6) Migração dos Modelos de dados
-  I) Comando
+  I) Comando para atualizar os dados e criar o banco de dados:
     --> py manage.py migrate
 
 7) Credenciais de um SuperUsuário
   I) Comando
     --> py manage.py createsuperuser
+    --> Informar o nome do usuário admin
+    --> Informar o e-mail do usuário admin
+    --> Informar a senha do usuário admin
+    --> Repetir a senha do usuário admin
 
 8) Criação de uma apliação Web
-  I) Comando
-    --> py manage.py startapp produtos
+  I) Comando para a criar uma nova aplicação.
+    --> py manage.py startapp "application_name"
+    
+   II) Incluir a nova aplicação na opçãos "INSTALLED_APPS" do arquivo "settings.py".
+   
+   III) Após incluir a nova aplicação, executar o comando de migração do modulo manage.py, comando:
+    --> py manage.py migrate
 
-9) Realizar os roteamentos das páginas (URL.py)
+9) Realizar os roteamentos das urls padrões no arquivo "urls.py" da pasta principal do projeto. 
+  I) Importar a função "include" do modulo "django.urls"
+    --> from django.urls import path, include
+    
+  I) Na opção url padrões ("urlpatterns") incluir o comando para adicionar a nova apliação criada no projeto.
+    --> path("", include("name_application")),
 
-10) Criar função início (view.py)
+10) Criar a pasta "templates" e criar arquivos HTML da nova aplicação.
+  I) Criar uma pasta com o nome "templates" dentro da nova aplicação.
+  
+  II) Criar o arquivo HTML ("file_name.html") dentro da pasta templates.
+  
+  
+11) Criar as funções no arquivo "view.py" na aplicação para renderizar as paginas HTML.
+  --> def function_name(request):
+        return render(resquest, "file_name_html.html")
+  
+12) Criar o arquivo "urls.py" dentro da aplicação e configurá-lo.
+  I) Importar o obsjeto "path" da biblioteca "djando":
+    --> from django.urls import path
+    
+  II) Importar a função "function_name" do arquivo "views.py":
+    --> from .views import function_name
+  
+  III) Configurar as urls padrões:
+    --> urlpatterns = [
+                    path("", function_name),
+                  ]    
 
-11) Criar template e arquivo HTML
-
-12) Criar pasta Static e configurar localização da pasta em setting.py
-
-13) Criar uma pasta imagens e incluir todas as imagens nesta pasta
-
+13) Criar pasta Static e configurar a localização da pasta em setting.py
+  I) Criar uma pasta com o no "static" no projeto;
+  
+  II) Criar as pastas "CSS", "IMG", "JS" dentro da pasta "static";
+  
+  III) Criar o arquivo "css" com os stylos da página dentro da pasta "CSS";
+  
+  IV) Adicioanar as imagens do projeto dentro da pasta "IMG";
+  
+  III) Criar o arquivo "js" para os comando javascripts dentro da pasta "JS";
+  
+  
+14) Configurar os modelos de dados no aquivo "models.py" da nova apliação.
+  I) Importar o objetos "models" do django:
+    --> from django.db import models
+  
+  II) Criar a uma classe:
+    --> class class_name(models.Model)
+    
+  III) Configurar os modelos de dados
+    --> product_name = models.CharField(max_length=100)
+    --> product_price = models.DecimalField(max_digits=8, decimal_places=2)
+    --> product_description = models.TextField()
+ 
+ 
+15) Realizar a migração dos dados.
+  --> py manage.py makemigrations
+  
+16) Registrar os modelos da nova classe e criar o CRUD no arquivo "admin.py" da apliação para a página administrador.
+  I) Comando:
+    --> from .models import class_name
+    --> admin.site.register(class_name)
+  
+  
 14) Chamar as imagens dentro do HTML através de tags de bloco do Python {% %}
-
-15) Criar pasta para o uso do CSS, Python e JavaScript
 
 
