@@ -111,7 +111,22 @@
     --> from .models import class_name
     --> admin.site.register(class_name)
   
+
+17) Recuperar os dados cadastrados na página HTML.
+  I) Configurar a função criada no arquivo "views.py":
+    --> def function_name(request):
+          products_relation = produto.objects.all()
+          return render(resquest, "file_name_html.html", {"products_relation":products_relation)
   
+18) Incluir o comando para incluir os dados na página HTML:
+  I) Utilizar as TAGs {{}} de variáveis e as TAGs de BLOCO {% %} com os comandos Python.
+    --> {% for product in products_relation%}
+    -->   <p> Produto: {{produto.product_name}} </p>
+    -->   <p> Preço: {{produto.product_price}} </p>
+    -->   <p> Descrição: {{produto.product_description}} </p>
+    --> {% endfor %}
+
 14) Chamar as imagens dentro do HTML através de tags de bloco do Python {% %}
 
+Contuniar 25 minutos video 2.
 
